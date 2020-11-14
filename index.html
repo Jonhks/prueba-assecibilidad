@@ -8,9 +8,18 @@
   <meta name="keywords" content="Videojuegos, Call Of Duty, COD, Warzone"> -->
   <!-- <meta http-equiv="refresh" content="60"> -->
   <!-- <meta http-equiv="refresh" content="5;URL='http://www.youtube.com'"> -->
-  <title>Accesibilidad</title>
+
+  <meta property="og:title" content="Last Of Us">
+  <meta property="og:description" content="Reconocido mundialmente como el mejor juego del año">
+  <meta property="og:type" content="article">
+  <meta property="og:site name" content="Lastofus.com">
+  <meta property="og:url" content="https://jonhks.github.io/prueba-assecibilidad/index.html">
+  <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZN7_aLbxSkJXr4Yynxg8hsywpWvslpZ-JUA&usqp=CAU">
+
+  <title>Last of Us</title>
 </head>
 <body>
+  <div id="number">0</div>
   <h1>Hola Chicas</h1>
 
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur aut assumenda velit optio itaque nisi consequuntur nam blanditiis omnis sint, corrupti non aspernatur molestiae reiciendis quae. Enim expedita minus velit!</p>
@@ -21,5 +30,14 @@
     <img src="./descarga.jpeg" alt="Last of Us" width="60%">
   </figure>
 
+
+  <script>
+    let count = 0;
+    let element = document.getElementById("number");
+    setInterval(() =>{
+      element.innerHTML = count;
+    count++;
+  },1000);
+  </script>
 </body>
 </html>
